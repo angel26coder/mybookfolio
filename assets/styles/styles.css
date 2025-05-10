@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before:not(i) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: rgb(44, 26, 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  width: 50vw;
+  height: 90vh;
+  background-color: white;
+  position: relative;
+  perspective: 1000px;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  transition: all 1s ease;
+  transform-origin: 0;
+  transform: rotateY(0deg);
+}
+
+body:hover .page1 {
+  transform: rotateY(-90deg);
+}/*# sourceMappingURL=styles.css.map */
